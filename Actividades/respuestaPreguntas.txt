@@ -1,0 +1,10 @@
+- ¿Con qué combinación se lee mejor el texto de cuerpo? ¿Por qué crees que pasa eso?
+
+        ·El texto es más legíble en la combinación de alto contraste, por el 
+         contraste en los colores.
+
+    - ¿Qué combinación transmite una sensación más "segura" o "corporativa", y cuál más "llamativa" o "arriesgada"?
+
+        ·La combinación segura transmite mayor confianza o sensación de 
+         seguridad gracias a los tonos verdes. La versión de alto contraste
+         es bastante más llamativa.
