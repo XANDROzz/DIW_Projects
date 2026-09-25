@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica: iconos e imágenes</title>
+
+    <!-- Font Awesome: fuente de iconos vectoriales gratuita (ver apartado 8.1 del tema) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Práctica: iconos y composición de imágenes</h1>
+
+    <!-- ===================== 1. BARRA DE ICONOS ===================== -->
+    <section>
+      <h2>1. Barra de iconos</h2>
+      <p>
+        Todos los iconos deben tener el mismo tamaño y estilo, y una alternativa
+        de texto para las personas que no puedan verlos (apartado 8.2 del tema).
+      </p>
+
+      <nav class="barra-iconos">
+        <a href="#" class="icono" aria-label="Inicio">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icono" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icono" aria-label="Carrito de la compra">
+          <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icono" aria-label="Nuestro GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icono" aria-label="Nuestro GitHub">
+          <i class="fa-solid fa-bell" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icono" aria-label="Nuestro GitHub">
+          <i class="fa-solid fa-plane" aria-hidden="true"></i>
+        </a>
+
+        <!-- TODO 1: añade aquí al menos 2 iconos más.
+           Busca su nombre de clase en https://fontawesome.com/icons
+           (usa solo iconos marcados como "Free").
+           Mantén siempre el mismo formato: <a> + aria-label + <i> -->
+      </nav>
+    </section>
+
+    <!-- ===================== 2. REGLA DE LOS TERCIOS ===================== -->
+    <section>
+      <h2>2. Regla de los tercios</h2>
+      <p>
+        La rejilla roja marca los "puntos de fuerza" de cada imagen (ver
+        apartado 9 del tema). Sustituye las dos imágenes de ejemplo por otras
+        tuyas y comprueba si el sujeto principal cae cerca de alguno de esos
+        puntos.
+      </p>
+
+      <div class="galeria-tercios">
+        <figure>
+          <div class="marco-tercios">
+            <img
+              src="https://images.unsplash.com/photo-1788193503199-57b91346b1e9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D"
+              alt="Imagen de ejemplo 1, sustitúyela por la tuya"
+            />
+            <!-- TODO 2a: cambia el src de esta imagen por una tuya propia -->
+          </div>
+          <figcaption>
+            La puerta se sitúa sobre los puntos de fuerza de la parte izquierda
+            del marco. Porque podemos identificar fácilmente cómo la puerta, el
+            sujeto principal, se encuentra sobre los puntos de fuerza del
+            lateral izquierdo.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="marco-tercios">
+            <img
+              src="https://images.unsplash.com/photo-1789941477547-9183d074a373?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Imagen de ejemplo 2, sustitúyela por la tuya"
+            />
+            <!-- TODO 2b: cambia el src de esta imagen por otra tuya -->
+          </div>
+          <figcaption>
+            El sujeto se encuentra sobre los puntos de fuerza de la parte
+            derecha de la rejilla. Porque podemos observar cómo la planta, el
+            sujeto principal, se alza sobre ambos puntos de fuerza.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== 3. ÁNGULOS FOTOGRÁFICOS ===================== -->
+    <section>
+      <h2>3. Ángulos fotográficos</h2>
+      <p>
+        Para cada imagen, indica qué ángulo crees que se ha usado (normal,
+        contrapicado, picado, nadir o cenital) y en qué tipo de página web lo
+        usarías.
+      </p>
+
+      <div class="galeria-angulos">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1789758385591-71b1a42235ee?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8Y29taWRhfGVufDB8fDB8fHww"
+            alt="Imagen de ejemplo para identificar el ángulo, sustitúyela por la tuya"
+          />
+          <figcaption>
+            <label
+              >Ángulo:
+              <select>
+                <option value="">-- elige --</option>
+                <option>Normal</option>
+                <option>Contrapicado</option>
+                <option>Picado</option>
+                <option>Nadir</option>
+                <option>Cenital</option>
+              </select>
+            </label>
+            <p>
+              Yo utilizaría este tipo de fotos con ángulo picado en webs de
+              gastronomía ya que presentan los platos de manera vistosa y clara
+            </p>
+          </figcaption>
+        </figure>
+
+        <!-- TODO 3: duplica este bloque <figure> dos veces más, con dos
+           imágenes propias que muestren ángulos distintos entre sí -->
+      </div>
+    </section>
+
+    <!-- ===================== 4. REFLEXIÓN FINAL ===================== -->
+    <section>
+      <h2>4. Reflexión final</h2>
+      <p>
+        Usar iconos es mucho más optimo a poner imágenes ya que estes pesan
+        mucho menos y apenas sobrecargan la página web a comparación de las
+        imágenes. Además es importante hacer uso de los iconos de manera
+        correcta para que el usuario pueda maniobrar por la web de manera
+        intuitiva y sin comerse mucho la cabeza.
+      </p>
+    </section>
+  </body>
+</html>
