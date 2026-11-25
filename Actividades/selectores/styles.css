@@ -2,106 +2,163 @@
 
 /*1. Selector de etiqueta: establece la fuente de toda la página mediante body.*/
 
-
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 /* 2. Selector de etiqueta: asigna un color a todos los encabezados h2. */
 
-
+h2 {
+  color: blueviolet;
+}
 
 /* 3. Selector de clase: aplica un fondo azul claro a los elementos que tengan la clase ciclo. */
 
-
+.ciclo {
+  background-color: lightblue;
+}
 
 /* 4. Selector de ID: establece un fondo oscuro y texto blanco para la cabecera #cabecera. */
 
-
+#cabecera {
+  background-color: darkblue;
+  color: white;
+}
 
 /* 5. Selector múltiple: aplica el mismo color a los elementos h1, h2 y h3. */
 
-
+h1,
+h2,
+h3 {
+  color: darkgoldenrod;
+}
 
 /*B. SELECTORES COMBINADORES*/
 
 /* 6. Selector descendiente: establece un color gris para todos los párrafos que estén dentro de #noticias.*/
 
-
+#noticias p {
+  color: gray;
+}
 
 /* 7. Selector hijo directo: aplica un margen a los elementos li que sean hijos directos de la lista del menú nav. */
 
-
+nav ul > li {
+  margin: 2px;
+}
 
 /* 8. Selector de hermanos adyacentes: establece un margen superior para el primer article que aparezca inmediatamente después de un h2. */
 
-
+article:first-of-type {
+  margin-top: 2px;
+}
 
 /* 9. Selector de hermanos generales: cambia el color de los párrafos que sean hermanos posteriores de un h3.*/
 
-
+h3 ~ p {
+  color: maroon;
+}
 
 /*C. SELECTORES DE ATRIBUTOS*/
 
 /* 10. Selecciona todos los enlaces que tengan el atributo href y establece su color en azul.*/
 
-
+a[href] {
+  color: blue;
+}
 
 /* 11. Selecciona los enlaces cuyo href comience por https y añade un borde inferior.*/
 
-
+a[href^="https://"] {
+  border-bottom: 0ch solid;
+}
 
 /*12. Selecciona los enlaces cuyo href contenga la palabra mailto y cambia su color.*/
 
-
+a[href*="mailto"] {
+  color: greenyellow;
+}
 
 /* D. PSEUDOCLASES */
 
 /* 13. :hover: cuando el ratón pase sobre un enlace, cambia su color y elimina el subrayado.*/
 
-
+a[href]:hover {
+  color: orange;
+  text-decoration: none;
+}
 
 /* 14. :active: mientras se pulsa un enlace, cambia su fondo.*/
 
-
+a[href]:active {
+  background-color: blueviolet;
+}
 
 /* 15. :visited: los enlaces visitados deben tener otro color. */
 
-
+a[href]:visited {
+  color: teal;
+}
 
 /* 16. :first-child: aplica negrita al primer elemento de cada lista. */
 
-
+ul > li:first-child {
+  font-weight: bold;
+}
 
 /* 17. :last-child: aplica un borde inferior al último elemento de cada lista.*/
 
-
+ul > li:last-child {
+  border-bottom: 1ch solid;
+}
 
 /* 18. :nth-child(2): aplica un fondo diferente al segundo elemento de la lista (article) de noticias. */
 
-
+#noticias article:nth-child(2) {
+  background-color: crimson;
+}
 
 /* 19. :not(.destacado): aplica un borde a todos los ciclos que no tengan la clase destacado.*/
 
-
+.ciclo:not(.destacado) {
+  border: 2px solid black;
+}
 
 /* 20. :focus: cuando un enlace reciba el foco mediante el teclado, debe mostrar un contorno visible.*/
 
-
+a[href]:focus {
+  outline: 1px solid violet;
+}
 
 /* E. PSEUDOELEMENTOS */
 
 /* 21. ::before: añade un símbolo decorativo antes del texto de cada título h2.*/
 
-
+h2::before {
+  content: "📰 ";
+}
 
 /* 22. ::after: añade un texto - Más información después de los títulos h3 de los ciclos.*/
 
-
+#ciclos h3::after {
+  content: " - Más información";
+}
 
 /* 23. ::first-letter: aumenta el tamaño de la primera letra de los párrafos de las noticias.*/
 
-
+#noticias p::first-letter {
+  font-size: xx-large;
+}
 
 /* 24. ::first-line: muestra en negrita la primera línea de los párrafos de la sección de noticias.*/
- 
 
+#noticias p::first-line {
+  font-weight: bolder;
+}
 
 /* 25. ::selection: establece un fondo azul y texto blanco cuando el usuario seleccione texto de la página.*/
+
+body::selection {
+  background-color: blue;
+  color: white;
+}
